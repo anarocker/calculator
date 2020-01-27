@@ -1,0 +1,9 @@
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\bin\Debug\CalculatorWindowsApp.exe.config
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\bin\Debug\CalculatorWindowsApp.exe
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\bin\Debug\CalculatorWindowsApp.pdb
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.csprojAssemblyReference.cache
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.Properties.Resources.resources
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.csproj.GenerateResource.cache
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.exe
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.pdb
+D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.Form1.resources
