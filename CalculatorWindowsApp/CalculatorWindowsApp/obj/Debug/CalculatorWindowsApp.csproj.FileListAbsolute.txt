@@ -7,3 +7,12 @@ D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\Calcul
 D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.exe
 D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.pdb
 D:\ChatApp\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.Form1.resources
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\bin\Debug\CalculatorWindowsApp.exe.config
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\bin\Debug\CalculatorWindowsApp.exe
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\bin\Debug\CalculatorWindowsApp.pdb
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.csprojAssemblyReference.cache
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.Form1.resources
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.Properties.Resources.resources
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.csproj.GenerateResource.cache
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.exe
+D:\Github\calculator\CalculatorWindowsApp\CalculatorWindowsApp\obj\Debug\CalculatorWindowsApp.pdb
