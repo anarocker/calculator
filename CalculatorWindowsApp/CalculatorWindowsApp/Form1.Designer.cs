@@ -317,7 +317,7 @@
             // 
             this.tbHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbHistory.Font = new System.Drawing.Font("TH SarabunPSK", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tbHistory.ForeColor = System.Drawing.Color.White;
             this.tbHistory.Location = new System.Drawing.Point(418, 71);
             this.tbHistory.Multiline = true;
@@ -329,11 +329,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("TH SarabunPSK", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(523, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 43);
+            this.label1.Size = new System.Drawing.Size(123, 37);
             this.label1.TabIndex = 24;
             this.label1.Text = "History";
             // 

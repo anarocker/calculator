@@ -15,7 +15,8 @@ namespace CalculatorWindowsApp
         double resultValue;
         string operatorChar = "";
         bool operatorBool = false;
-        string Num1, Num2, Sum;
+        string Num1, Sum;
+        string status = "";
 
         public Form1()
         {
@@ -33,20 +34,21 @@ namespace CalculatorWindowsApp
             {
                 tbResult.Clear();
             }
-
             operatorBool = false;
             Button button = (Button)sender;
 
-            if (tbResult.Text == ".")
+            if (button.Text == ".")
             {
-                if (tbResult.Text.Contains("."))
+                if (!tbResult.Text.Contains("."))
                 {
                     tbResult.Text = tbResult.Text + button.Text;
+                    tbValue.AppendText(button.Text);
                 }
             }
             else
             {
                 tbResult.Text = tbResult.Text + button.Text;
+                tbValue.AppendText(button.Text);
             }
 
         }
@@ -62,88 +64,26 @@ namespace CalculatorWindowsApp
 
             if (resultValue != 0)
             {
+                btEqual_Click(sender, e);
                 operatorChar = button.Text;
                 resultValue = double.Parse(tbResult.Text);
-                operatorChar = button.Text;
                 lbNum1.Text = resultValue + "   " + operatorChar;
-                operatorBool = true;
-                Num1 = lbNum1.Text;
                 tbValue.AppendText(operatorChar);
+                operatorBool = true;
             }
             else
             {
                 operatorChar = button.Text;
                 resultValue = double.Parse(tbResult.Text);
-                operatorChar = button.Text;
                 lbNum1.Text = resultValue + "   " + operatorChar;
+                if (tbResult.Text != "0")
+                {
+                    tbValue.AppendText(operatorChar);
+                }
+                status = "+";
                 operatorBool = true;
-                Num1 = lbNum1.Text;
             }
 
-        }
-
-        /// <summary>
-        /// Equal Button 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btEqual_Click(object sender, EventArgs e)
-        {
-            switch (operatorChar)
-            {
-                case "+":
-                    lbNum2.Text = double.Parse(tbResult.Text).ToString(); 
-                    tbResult.Text = (resultValue + double.Parse(tbResult.Text)).ToString();
-                    Num2 = lbNum2.Text;
-                    Sum = tbResult.Text;
-                    break;
-
-                case "-":
-                    lbNum2.Text = double.Parse(tbResult.Text).ToString();
-                    tbResult.Text = (resultValue - double.Parse(tbResult.Text)).ToString();
-                    Num2 = lbNum2.Text;
-                    Sum = tbResult.Text;
-                    break;
-
-                case "*":
-                    lbNum2.Text = double.Parse(tbResult.Text).ToString();
-                    tbResult.Text = (resultValue * double.Parse(tbResult.Text)).ToString();
-                    Num2 = lbNum2.Text;
-                    Sum = tbResult.Text;
-                    break;
-
-                case "/":
-                    lbNum2.Text = double.Parse(tbResult.Text).ToString();
-                    tbResult.Text = (resultValue / double.Parse(tbResult.Text)).ToString();
-                    Num2 = lbNum2.Text;
-                    Sum = tbResult.Text;
-                    break;
-            }
-            tbHistory.AppendText(Num1 + "  " + Num2 + "  " + "=" + "  " + Sum + "\r\n");    //Show on History Box.
-            
-        }
-
-        /// <summary>
-        /// Percent Button (%)
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btPercent_Click(object sender, EventArgs e)
-        {
-            //Button button = (Button)sender;
-            //if (tbResult.Text != 0 || )
-            //{
-            //    operatorChar = button.Text;
-            //    resultValue = double.Parse(tbResult.Text);
-            //    operatorChar = button.Text;
-            //    lbNum1.Text = resultValue + "   " + operatorChar;
-            //    operatorBool = true;
-            //    Num1 = lbNum1.Text;
-
-            //tbResult.Text = ((resultValue / double.Parse(tbResult.Text))/100).ToString();
-            //test = tbResult.Text;
-            //tbResult.AppendText(test);
-            //}
         }
 
         /// <summary>
@@ -157,7 +97,67 @@ namespace CalculatorWindowsApp
             resultValue = 0;
             lbNum1.Text = "";
             lbNum2.Text = "";
+            tbValue.Text = "";
         }
+
+        /// <summary>
+        /// Equal Button 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btEqual_Click(object sender, EventArgs e)
+        {
+            lbNum2.Text = double.Parse(tbResult.Text).ToString();
+            Num1 = lbNum1.Text + " " + lbNum2.Text;
+            switch (operatorChar)
+            {
+                case "+":
+                    tbResult.Text = (resultValue + double.Parse(tbResult.Text)).ToString();
+                    Sum = tbResult.Text;
+                    break;
+
+                case "-":
+                    tbResult.Text = (resultValue - double.Parse(tbResult.Text)).ToString();
+                    Sum = tbResult.Text;
+                    break;
+
+                case "*":
+                    tbResult.Text = (resultValue * double.Parse(tbResult.Text)).ToString();
+                    Sum = tbResult.Text;
+                    break;
+
+                case "/":
+                    tbResult.Text = (resultValue / double.Parse(tbResult.Text)).ToString();
+                    Sum = tbResult.Text;
+                    break;
+                case "%":
+                    tbResult.Text = ((resultValue / double.Parse(tbResult.Text))*100).ToString();
+                    Sum = tbResult.Text;
+                    break;
+            }
+            tbHistory.AppendText(Num1 + "  " + "=" + "  " + "\r\n");    //Show on History Box.
+            tbHistory.AppendText(Sum);
+
+        }
+
+        /// <summary>
+        /// Percent Button (%)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btPercent_Click(object sender, EventArgs e)
+        {
+            if (operatorChar == "+" || operatorChar == "-")
+            {
+                tbResult.Text = ((double.Parse(tbResult.Text) / 100) * resultValue).ToString();
+            }
+            else
+            {
+                tbResult.Text = (double.Parse(tbResult.Text) / 100).ToString();
+            }
+        }
+
+        
 
         /// <summary>
         /// Delete Last Number (Backspace)
@@ -172,6 +172,6 @@ namespace CalculatorWindowsApp
             }
         }
 
-       
+
     }
 }
