@@ -49,16 +49,18 @@
             this.btNum0 = new System.Windows.Forms.Button();
             this.tbResult = new System.Windows.Forms.TextBox();
             this.lbNum1 = new System.Windows.Forms.Label();
-            this.lbNum2 = new System.Windows.Forms.Label();
             this.tbHistory = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbNum2 = new System.Windows.Forms.Label();
+            this.btBackspace = new System.Windows.Forms.Button();
+            this.tbValue = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btNum7
             // 
-            this.btNum7.BackColor = System.Drawing.Color.White;
+            this.btNum7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum7.ForeColor = System.Drawing.Color.Gray;
+            this.btNum7.ForeColor = System.Drawing.Color.White;
             this.btNum7.Location = new System.Drawing.Point(8, 126);
             this.btNum7.Name = "btNum7";
             this.btNum7.Size = new System.Drawing.Size(76, 77);
@@ -69,9 +71,9 @@
             // 
             // btNum8
             // 
-            this.btNum8.BackColor = System.Drawing.Color.White;
+            this.btNum8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum8.ForeColor = System.Drawing.Color.Gray;
+            this.btNum8.ForeColor = System.Drawing.Color.White;
             this.btNum8.Location = new System.Drawing.Point(90, 126);
             this.btNum8.Name = "btNum8";
             this.btNum8.Size = new System.Drawing.Size(76, 77);
@@ -82,9 +84,9 @@
             // 
             // btNum9
             // 
-            this.btNum9.BackColor = System.Drawing.Color.White;
+            this.btNum9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum9.ForeColor = System.Drawing.Color.Gray;
+            this.btNum9.ForeColor = System.Drawing.Color.White;
             this.btNum9.Location = new System.Drawing.Point(172, 126);
             this.btNum9.Name = "btNum9";
             this.btNum9.Size = new System.Drawing.Size(76, 77);
@@ -95,9 +97,9 @@
             // 
             // btOperate4
             // 
-            this.btOperate4.BackColor = System.Drawing.Color.White;
+            this.btOperate4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btOperate4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btOperate4.ForeColor = System.Drawing.Color.Blue;
+            this.btOperate4.ForeColor = System.Drawing.Color.White;
             this.btOperate4.Location = new System.Drawing.Point(254, 126);
             this.btOperate4.Name = "btOperate4";
             this.btOperate4.Size = new System.Drawing.Size(76, 77);
@@ -108,23 +110,23 @@
             // 
             // btClear
             // 
-            this.btClear.BackColor = System.Drawing.Color.White;
+            this.btClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btClear.ForeColor = System.Drawing.Color.Red;
-            this.btClear.Location = new System.Drawing.Point(336, 126);
+            this.btClear.ForeColor = System.Drawing.Color.White;
+            this.btClear.Location = new System.Drawing.Point(336, 209);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(76, 77);
             this.btClear.TabIndex = 5;
-            this.btClear.Text = "C";
+            this.btClear.Text = "CE";
             this.btClear.UseVisualStyleBackColor = false;
             this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
             // btPercent
             // 
-            this.btPercent.BackColor = System.Drawing.Color.White;
+            this.btPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btPercent.ForeColor = System.Drawing.Color.Blue;
-            this.btPercent.Location = new System.Drawing.Point(336, 209);
+            this.btPercent.ForeColor = System.Drawing.Color.White;
+            this.btPercent.Location = new System.Drawing.Point(336, 292);
             this.btPercent.Name = "btPercent";
             this.btPercent.Size = new System.Drawing.Size(76, 77);
             this.btPercent.TabIndex = 10;
@@ -134,9 +136,9 @@
             // 
             // btOperate3
             // 
-            this.btOperate3.BackColor = System.Drawing.Color.White;
+            this.btOperate3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btOperate3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btOperate3.ForeColor = System.Drawing.Color.Blue;
+            this.btOperate3.ForeColor = System.Drawing.Color.White;
             this.btOperate3.Location = new System.Drawing.Point(254, 209);
             this.btOperate3.Name = "btOperate3";
             this.btOperate3.Size = new System.Drawing.Size(76, 77);
@@ -147,9 +149,9 @@
             // 
             // btNum6
             // 
-            this.btNum6.BackColor = System.Drawing.Color.White;
+            this.btNum6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum6.ForeColor = System.Drawing.Color.Gray;
+            this.btNum6.ForeColor = System.Drawing.Color.White;
             this.btNum6.Location = new System.Drawing.Point(172, 209);
             this.btNum6.Name = "btNum6";
             this.btNum6.Size = new System.Drawing.Size(76, 77);
@@ -160,9 +162,9 @@
             // 
             // btNum5
             // 
-            this.btNum5.BackColor = System.Drawing.Color.White;
+            this.btNum5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum5.ForeColor = System.Drawing.Color.Gray;
+            this.btNum5.ForeColor = System.Drawing.Color.White;
             this.btNum5.Location = new System.Drawing.Point(90, 209);
             this.btNum5.Name = "btNum5";
             this.btNum5.Size = new System.Drawing.Size(76, 77);
@@ -173,9 +175,9 @@
             // 
             // btNum4
             // 
-            this.btNum4.BackColor = System.Drawing.Color.White;
+            this.btNum4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum4.ForeColor = System.Drawing.Color.Gray;
+            this.btNum4.ForeColor = System.Drawing.Color.White;
             this.btNum4.Location = new System.Drawing.Point(8, 209);
             this.btNum4.Name = "btNum4";
             this.btNum4.Size = new System.Drawing.Size(76, 77);
@@ -186,12 +188,12 @@
             // 
             // btEqual
             // 
-            this.btEqual.BackColor = System.Drawing.Color.White;
+            this.btEqual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btEqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btEqual.ForeColor = System.Drawing.Color.LimeGreen;
-            this.btEqual.Location = new System.Drawing.Point(336, 292);
+            this.btEqual.ForeColor = System.Drawing.Color.White;
+            this.btEqual.Location = new System.Drawing.Point(336, 375);
             this.btEqual.Name = "btEqual";
-            this.btEqual.Size = new System.Drawing.Size(76, 160);
+            this.btEqual.Size = new System.Drawing.Size(76, 77);
             this.btEqual.TabIndex = 15;
             this.btEqual.Text = "=";
             this.btEqual.UseVisualStyleBackColor = false;
@@ -199,9 +201,9 @@
             // 
             // btOperate2
             // 
-            this.btOperate2.BackColor = System.Drawing.Color.White;
+            this.btOperate2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btOperate2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btOperate2.ForeColor = System.Drawing.Color.Blue;
+            this.btOperate2.ForeColor = System.Drawing.Color.White;
             this.btOperate2.Location = new System.Drawing.Point(254, 292);
             this.btOperate2.Name = "btOperate2";
             this.btOperate2.Size = new System.Drawing.Size(76, 77);
@@ -212,9 +214,9 @@
             // 
             // btNum3
             // 
-            this.btNum3.BackColor = System.Drawing.Color.White;
+            this.btNum3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum3.ForeColor = System.Drawing.Color.Gray;
+            this.btNum3.ForeColor = System.Drawing.Color.White;
             this.btNum3.Location = new System.Drawing.Point(172, 292);
             this.btNum3.Name = "btNum3";
             this.btNum3.Size = new System.Drawing.Size(76, 77);
@@ -225,9 +227,9 @@
             // 
             // btNum2
             // 
-            this.btNum2.BackColor = System.Drawing.Color.White;
+            this.btNum2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum2.ForeColor = System.Drawing.Color.Gray;
+            this.btNum2.ForeColor = System.Drawing.Color.White;
             this.btNum2.Location = new System.Drawing.Point(90, 292);
             this.btNum2.Name = "btNum2";
             this.btNum2.Size = new System.Drawing.Size(76, 77);
@@ -238,9 +240,9 @@
             // 
             // btNum1
             // 
-            this.btNum1.BackColor = System.Drawing.Color.White;
+            this.btNum1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum1.ForeColor = System.Drawing.Color.Gray;
+            this.btNum1.ForeColor = System.Drawing.Color.White;
             this.btNum1.Location = new System.Drawing.Point(8, 292);
             this.btNum1.Name = "btNum1";
             this.btNum1.Size = new System.Drawing.Size(76, 77);
@@ -251,9 +253,9 @@
             // 
             // btOperate1
             // 
-            this.btOperate1.BackColor = System.Drawing.Color.White;
+            this.btOperate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btOperate1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btOperate1.ForeColor = System.Drawing.Color.Blue;
+            this.btOperate1.ForeColor = System.Drawing.Color.White;
             this.btOperate1.Location = new System.Drawing.Point(254, 375);
             this.btOperate1.Name = "btOperate1";
             this.btOperate1.Size = new System.Drawing.Size(76, 77);
@@ -264,9 +266,9 @@
             // 
             // btNumDot
             // 
-            this.btNumDot.BackColor = System.Drawing.Color.White;
+            this.btNumDot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNumDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNumDot.ForeColor = System.Drawing.Color.Gray;
+            this.btNumDot.ForeColor = System.Drawing.Color.White;
             this.btNumDot.Location = new System.Drawing.Point(172, 375);
             this.btNumDot.Name = "btNumDot";
             this.btNumDot.Size = new System.Drawing.Size(76, 77);
@@ -277,9 +279,9 @@
             // 
             // btNum0
             // 
-            this.btNum0.BackColor = System.Drawing.Color.White;
+            this.btNum0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btNum0.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.btNum0.ForeColor = System.Drawing.Color.Gray;
+            this.btNum0.ForeColor = System.Drawing.Color.White;
             this.btNum0.Location = new System.Drawing.Point(8, 375);
             this.btNum0.Name = "btNum0";
             this.btNum0.Size = new System.Drawing.Size(158, 77);
@@ -295,54 +297,80 @@
             this.tbResult.ForeColor = System.Drawing.Color.White;
             this.tbResult.Location = new System.Drawing.Point(8, 71);
             this.tbResult.Name = "tbResult";
-            this.tbResult.Size = new System.Drawing.Size(403, 44);
+            this.tbResult.Size = new System.Drawing.Size(404, 44);
             this.tbResult.TabIndex = 20;
+            this.tbResult.Text = "0";
             this.tbResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.tbResult.TextChanged += new System.EventHandler(this.tbResult_TextChanged);
             // 
             // lbNum1
             // 
             this.lbNum1.AutoSize = true;
-            this.lbNum1.Font = new System.Drawing.Font("TH Sarabun New", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.lbNum1.ForeColor = System.Drawing.Color.White;
             this.lbNum1.Location = new System.Drawing.Point(5, 25);
             this.lbNum1.Name = "lbNum1";
-            this.lbNum1.Size = new System.Drawing.Size(49, 43);
+            this.lbNum1.Size = new System.Drawing.Size(71, 37);
             this.lbNum1.TabIndex = 21;
-            this.lbNum1.Text = "......";
-            // 
-            // lbNum2
-            // 
-            this.lbNum2.AutoSize = true;
-            this.lbNum2.Font = new System.Drawing.Font("TH Sarabun New", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.lbNum2.ForeColor = System.Drawing.Color.White;
-            this.lbNum2.Location = new System.Drawing.Point(46, 25);
-            this.lbNum2.Name = "lbNum2";
-            this.lbNum2.Size = new System.Drawing.Size(49, 43);
-            this.lbNum2.TabIndex = 22;
-            this.lbNum2.Text = "......";
+            this.lbNum1.Text = "      ";
             // 
             // tbHistory
             // 
             this.tbHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbHistory.Font = new System.Drawing.Font("TH SarabunPSK", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tbHistory.ForeColor = System.Drawing.Color.White;
-            this.tbHistory.Location = new System.Drawing.Point(434, 71);
+            this.tbHistory.Location = new System.Drawing.Point(418, 71);
             this.tbHistory.Multiline = true;
             this.tbHistory.Name = "tbHistory";
-            this.tbHistory.Size = new System.Drawing.Size(276, 366);
+            this.tbHistory.Size = new System.Drawing.Size(305, 379);
             this.tbHistory.TabIndex = 23;
             this.tbHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("TH Sarabun New", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label1.Font = new System.Drawing.Font("TH SarabunPSK", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(543, 25);
+            this.label1.Location = new System.Drawing.Point(523, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 43);
+            this.label1.Size = new System.Drawing.Size(89, 43);
             this.label1.TabIndex = 24;
             this.label1.Text = "History";
+            // 
+            // lbNum2
+            // 
+            this.lbNum2.AutoSize = true;
+            this.lbNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lbNum2.ForeColor = System.Drawing.Color.White;
+            this.lbNum2.Location = new System.Drawing.Point(102, 25);
+            this.lbNum2.Name = "lbNum2";
+            this.lbNum2.Size = new System.Drawing.Size(62, 37);
+            this.lbNum2.TabIndex = 22;
+            this.lbNum2.Text = "     ";
+            // 
+            // btBackspace
+            // 
+            this.btBackspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btBackspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btBackspace.ForeColor = System.Drawing.Color.White;
+            this.btBackspace.Location = new System.Drawing.Point(336, 126);
+            this.btBackspace.Name = "btBackspace";
+            this.btBackspace.Size = new System.Drawing.Size(76, 77);
+            this.btBackspace.TabIndex = 25;
+            this.btBackspace.Text = "C";
+            this.btBackspace.UseVisualStyleBackColor = false;
+            this.btBackspace.Click += new System.EventHandler(this.btBackspace_Click);
+            // 
+            // tbValue
+            // 
+            this.tbValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbValue.ForeColor = System.Drawing.Color.White;
+            this.tbValue.Location = new System.Drawing.Point(172, 21);
+            this.tbValue.Multiline = true;
+            this.tbValue.Name = "tbValue";
+            this.tbValue.Size = new System.Drawing.Size(240, 44);
+            this.tbValue.TabIndex = 26;
             // 
             // Form1
             // 
@@ -350,6 +378,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(735, 462);
+            this.Controls.Add(this.tbValue);
+            this.Controls.Add(this.btBackspace);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbHistory);
             this.Controls.Add(this.lbNum2);
@@ -403,9 +433,11 @@
         private System.Windows.Forms.Button btNum0;
         private System.Windows.Forms.TextBox tbResult;
         private System.Windows.Forms.Label lbNum1;
-        private System.Windows.Forms.Label lbNum2;
         private System.Windows.Forms.TextBox tbHistory;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbNum2;
+        private System.Windows.Forms.Button btBackspace;
+        private System.Windows.Forms.TextBox tbValue;
     }
 }
 

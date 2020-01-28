@@ -65,19 +65,21 @@ namespace CalculatorWindowsApp
                 operatorChar = button.Text;
                 resultValue = double.Parse(tbResult.Text);
                 operatorChar = button.Text;
-                lbNum1.Text = resultValue + "" + operatorChar;
+                lbNum1.Text = resultValue + "   " + operatorChar;
                 operatorBool = true;
                 Num1 = lbNum1.Text;
+                tbValue.AppendText(operatorChar);
             }
             else
             {
                 operatorChar = button.Text;
                 resultValue = double.Parse(tbResult.Text);
                 operatorChar = button.Text;
-                lbNum1.Text = resultValue + "" + operatorChar;
+                lbNum1.Text = resultValue + "   " + operatorChar;
                 operatorBool = true;
                 Num1 = lbNum1.Text;
             }
+
         }
 
         /// <summary>
@@ -118,6 +120,30 @@ namespace CalculatorWindowsApp
                     break;
             }
             tbHistory.AppendText(Num1 + "  " + Num2 + "  " + "=" + "  " + Sum + "\r\n");    //Show on History Box.
+            
+        }
+
+        /// <summary>
+        /// Percent Button (%)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btPercent_Click(object sender, EventArgs e)
+        {
+            //Button button = (Button)sender;
+            //if (tbResult.Text != 0 || )
+            //{
+            //    operatorChar = button.Text;
+            //    resultValue = double.Parse(tbResult.Text);
+            //    operatorChar = button.Text;
+            //    lbNum1.Text = resultValue + "   " + operatorChar;
+            //    operatorBool = true;
+            //    Num1 = lbNum1.Text;
+
+            //tbResult.Text = ((resultValue / double.Parse(tbResult.Text))/100).ToString();
+            //test = tbResult.Text;
+            //tbResult.AppendText(test);
+            //}
         }
 
         /// <summary>
@@ -129,26 +155,23 @@ namespace CalculatorWindowsApp
         {
             tbResult.Text = "0";
             resultValue = 0;
+            lbNum1.Text = "";
+            lbNum2.Text = "";
         }
 
         /// <summary>
-        /// Percent Button
+        /// Delete Last Number (Backspace)
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btPercent_Click(object sender, EventArgs e)
+        private void btBackspace_Click(object sender, EventArgs e)
         {
-
+            if (tbResult.TextLength != 0)
+            {
+                tbResult.Text = tbResult.Text.Remove(tbResult.Text.Length - 1, 1);
+            }
         }
 
-        /// <summary>
-        /// Form1
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tbResult_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
