@@ -24,6 +24,7 @@ namespace CalculatorWindowsApp
 
 
         // Number and Dot Button
+        // 
         private void btNum_Click(object sender, EventArgs e)
         {
             if (tbResult.Text == "0" || operatorBool)
@@ -31,6 +32,7 @@ namespace CalculatorWindowsApp
                 tbResult.Clear();
             }
             operatorBool = false;
+
             Button button = (Button)sender;
 
             if (button.Text == ".")
@@ -50,7 +52,7 @@ namespace CalculatorWindowsApp
         }
 
 
-        // Operator Buntton (+, -, *, /)
+        // Operator Buntton 
         private void btOperator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -122,14 +124,13 @@ namespace CalculatorWindowsApp
             }
             tbHistory.AppendText(Num1 + "  " + "=" + "  " + "\r\n");    //Show on History Box.
             tbHistory.AppendText(Sum+"\r\n");
-
         }
 
 
         // Percent Button (%)
         private void btPercent_Click(object sender, EventArgs e)
         {
-            if (operatorChar == "+" || operatorChar == "-")
+            if (operatorChar == "+" || operatorChar == "-" || operatorChar == "*" || operatorChar == "/")
             {
                 tbResult.Text = ((double.Parse(tbResult.Text) / 100) * resultValue).ToString();
             }
@@ -153,8 +154,10 @@ namespace CalculatorWindowsApp
             if (tbResult.TextLength != 0)
             {
                 tbResult.Text = tbResult.Text.Remove(tbResult.Text.Length - 1, 1);
+                tbValue.Text = tbValue.Text.Remove(tbValue.Text.Length - 1, 1);
             }
         }
+
 
     }
 }
