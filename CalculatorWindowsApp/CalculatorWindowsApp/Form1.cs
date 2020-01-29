@@ -80,17 +80,6 @@ namespace CalculatorWindowsApp
         }
 
 
-        // Clear Value Button
-        private void btClear_Click(object sender, EventArgs e)
-        {
-            tbResult.Text = "0";
-            resultValue = 0;
-            lbNum1.Text = "";
-            lbNum2.Text = "";
-            tbValue.Text = "";
-        }
-
-
         // Sum Button 
         private void btEqual_Click(object sender, EventArgs e)
         {
@@ -117,10 +106,7 @@ namespace CalculatorWindowsApp
                     tbResult.Text = (resultValue / double.Parse(tbResult.Text)).ToString();
                     Sum = tbResult.Text;
                     break;
-                case "%":
-                    tbResult.Text = ((resultValue / double.Parse(tbResult.Text))*100).ToString();
-                    Sum = tbResult.Text;
-                    break;
+                
             }
             tbHistory.AppendText(Num1 + "  " + "=" + "  " + "\r\n");    //Show on History Box.
             tbHistory.AppendText(Sum+"\r\n");
@@ -138,6 +124,17 @@ namespace CalculatorWindowsApp
             {
                 tbResult.Text = (double.Parse(tbResult.Text) / 100).ToString();
             }
+        }
+
+
+        // Clear Value Button
+        private void btClear_Click(object sender, EventArgs e)
+        {
+            tbResult.Text = "0";
+            resultValue = 0;
+            lbNum1.Text = "";
+            lbNum2.Text = "";
+            tbValue.Text = "";
         }
 
 
