@@ -16,18 +16,14 @@ namespace CalculatorWindowsApp
         string operatorChar = "";
         bool operatorBool = false;
         string Num1, Sum;
-        string status = "";
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Number and Dot Button
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
+        // Number and Dot Button
         private void btNum_Click(object sender, EventArgs e)
         {
             if (tbResult.Text == "0" || operatorBool)
@@ -53,18 +49,14 @@ namespace CalculatorWindowsApp
 
         }
 
-        /// <summary>
-        /// Operator Buntton (+, -, *, /)
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
+        // Operator Buntton (+, -, *, /)
         private void btOperator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
 
             if (resultValue != 0)
             {
-                btEqual_Click(sender, e);
                 operatorChar = button.Text;
                 resultValue = double.Parse(tbResult.Text);
                 lbNum1.Text = resultValue + "   " + operatorChar;
@@ -80,17 +72,13 @@ namespace CalculatorWindowsApp
                 {
                     tbValue.AppendText(operatorChar);
                 }
-                status = "+";
                 operatorBool = true;
             }
 
         }
 
-        /// <summary>
-        /// Clear Value Button
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
+        // Clear Value Button
         private void btClear_Click(object sender, EventArgs e)
         {
             tbResult.Text = "0";
@@ -100,11 +88,8 @@ namespace CalculatorWindowsApp
             tbValue.Text = "";
         }
 
-        /// <summary>
-        /// Equal Button 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
+        // Sum Button 
         private void btEqual_Click(object sender, EventArgs e)
         {
             lbNum2.Text = double.Parse(tbResult.Text).ToString();
@@ -136,15 +121,12 @@ namespace CalculatorWindowsApp
                     break;
             }
             tbHistory.AppendText(Num1 + "  " + "=" + "  " + "\r\n");    //Show on History Box.
-            tbHistory.AppendText(Sum);
+            tbHistory.AppendText(Sum+"\r\n");
 
         }
 
-        /// <summary>
-        /// Percent Button (%)
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
+        // Percent Button (%)
         private void btPercent_Click(object sender, EventArgs e)
         {
             if (operatorChar == "+" || operatorChar == "-")
@@ -157,13 +139,15 @@ namespace CalculatorWindowsApp
             }
         }
 
-        
 
-        /// <summary>
-        /// Delete Last Number (Backspace)
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        // Clear History Box
+        private void btClearHis_Click(object sender, EventArgs e)
+        {
+            tbHistory.Text = "";
+        }
+
+
+        // Delete Last Number (Backspace)
         private void btBackspace_Click(object sender, EventArgs e)
         {
             if (tbResult.TextLength != 0)
@@ -171,7 +155,6 @@ namespace CalculatorWindowsApp
                 tbResult.Text = tbResult.Text.Remove(tbResult.Text.Length - 1, 1);
             }
         }
-
 
     }
 }

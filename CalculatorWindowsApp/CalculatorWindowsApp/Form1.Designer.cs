@@ -54,6 +54,7 @@
             this.lbNum2 = new System.Windows.Forms.Label();
             this.btBackspace = new System.Windows.Forms.Button();
             this.tbValue = new System.Windows.Forms.TextBox();
+            this.btClearHis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btNum7
@@ -312,6 +313,7 @@
             this.lbNum1.Size = new System.Drawing.Size(71, 37);
             this.lbNum1.TabIndex = 21;
             this.lbNum1.Text = "      ";
+            this.lbNum1.Visible = false;
             // 
             // tbHistory
             // 
@@ -322,7 +324,7 @@
             this.tbHistory.Location = new System.Drawing.Point(418, 71);
             this.tbHistory.Multiline = true;
             this.tbHistory.Name = "tbHistory";
-            this.tbHistory.Size = new System.Drawing.Size(305, 379);
+            this.tbHistory.Size = new System.Drawing.Size(305, 332);
             this.tbHistory.TabIndex = 23;
             this.tbHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -331,7 +333,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(523, 9);
+            this.label1.Location = new System.Drawing.Point(511, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 37);
             this.label1.TabIndex = 24;
@@ -347,6 +349,7 @@
             this.lbNum2.Size = new System.Drawing.Size(62, 37);
             this.lbNum2.TabIndex = 22;
             this.lbNum2.Text = "     ";
+            this.lbNum2.Visible = false;
             // 
             // btBackspace
             // 
@@ -365,12 +368,26 @@
             // 
             this.tbValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tbValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbValue.Font = new System.Drawing.Font("TH SarabunPSK", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.tbValue.ForeColor = System.Drawing.Color.White;
-            this.tbValue.Location = new System.Drawing.Point(172, 21);
+            this.tbValue.Location = new System.Drawing.Point(12, 21);
             this.tbValue.Multiline = true;
             this.tbValue.Name = "tbValue";
-            this.tbValue.Size = new System.Drawing.Size(240, 44);
+            this.tbValue.Size = new System.Drawing.Size(400, 44);
             this.tbValue.TabIndex = 26;
+            // 
+            // btClearHis
+            // 
+            this.btClearHis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btClearHis.Font = new System.Drawing.Font("TH SarabunPSK", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btClearHis.ForeColor = System.Drawing.Color.White;
+            this.btClearHis.Location = new System.Drawing.Point(418, 409);
+            this.btClearHis.Name = "btClearHis";
+            this.btClearHis.Size = new System.Drawing.Size(305, 43);
+            this.btClearHis.TabIndex = 27;
+            this.btClearHis.Text = "Clear";
+            this.btClearHis.UseVisualStyleBackColor = false;
+            this.btClearHis.Click += new System.EventHandler(this.btClearHis_Click);
             // 
             // Form1
             // 
@@ -378,6 +395,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(735, 462);
+            this.Controls.Add(this.btClearHis);
             this.Controls.Add(this.tbValue);
             this.Controls.Add(this.btBackspace);
             this.Controls.Add(this.label1);
@@ -438,6 +456,7 @@
         private System.Windows.Forms.Label lbNum2;
         private System.Windows.Forms.Button btBackspace;
         private System.Windows.Forms.TextBox tbValue;
+        private System.Windows.Forms.Button btClearHis;
     }
 }
 
