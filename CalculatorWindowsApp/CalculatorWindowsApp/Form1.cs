@@ -23,8 +23,11 @@ namespace CalculatorWindowsApp
         }
 
 
-        // Number and Dot Button
-        // 
+        /// <summary>
+        /// Number and Dot Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btNum_Click(object sender, EventArgs e)
         {
             if (tbResult.Text == "0" || operatorBool)
@@ -51,8 +54,11 @@ namespace CalculatorWindowsApp
 
         }
 
-
-        // Operator Buntton 
+        /// <summary>
+        /// Operator Buntton
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btOperator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -79,8 +85,11 @@ namespace CalculatorWindowsApp
 
         }
 
-
-        // Sum Button 
+        /// <summary>
+        /// Sum Button 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btEqual_Click(object sender, EventArgs e)
         {
             lbNum2.Text = double.Parse(tbResult.Text).ToString();
@@ -113,7 +122,11 @@ namespace CalculatorWindowsApp
         }
 
 
-        // Percent Button (%)
+        /// <summary>
+        /// Percent Button (%)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btPercent_Click(object sender, EventArgs e)
         {
             if (operatorChar == "+" || operatorChar == "-" || operatorChar == "*" || operatorChar == "/")
@@ -127,7 +140,11 @@ namespace CalculatorWindowsApp
         }
 
 
-        // Clear Value Button
+        /// <summary>
+        /// Clear Value Button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btClear_Click(object sender, EventArgs e)
         {
             tbResult.Text = "0";
@@ -138,14 +155,22 @@ namespace CalculatorWindowsApp
         }
 
 
-        // Clear History Box
+        /// <summary>
+        /// Clear History Box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btClearHis_Click(object sender, EventArgs e)
         {
             tbHistory.Text = "";
         }
 
 
-        // Delete Last Number (Backspace)
+        /// <summary>
+        /// Delete Last Number (Backspace)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btBackspace_Click(object sender, EventArgs e)
         {
             if (tbResult.TextLength != 0)
